@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jackson</groupId>
+	<artifactId>version</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>version</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<scm>
+		<url>https://github.com/jacksonpscruz/version.git</url>
+		<connection>scm:git:https://github.com/jacksonpscruz/version.git</connection>
+		<developerConnection>scm:git:https://github.com/jacksonpscruz/version.git</developerConnection>
+		<tag>@{project.version}</tag>
+	</scm>
+
+
+	<build>
+		<!-- <finalName>@{project}</finalName> -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<goals>pre-integration-test</goals>
+					<preparationGoals>package</preparationGoals>
+					<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+					<tagNameFormat>@{project.version}</tagNameFormat>
+					<remoteTagging>false</remoteTagging>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

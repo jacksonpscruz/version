@@ -1,0 +1,10 @@
+*.log
+*.zip
+*.tar.gz
+*.rar
+.settings/
+.metadata
+.classpath
+.project
+bin/
+target/
