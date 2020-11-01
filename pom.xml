@@ -3,7 +3,7 @@
 
 	<groupId>com.jackson</groupId>
 	<artifactId>version</artifactId>
-	<version>0.0.6</version>
+	<version>0.0.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>version</name>
@@ -16,7 +16,7 @@
 		<url>https://github.com/jacksonpscruz/version.git</url>
 		<connection>scm:git:https://github.com/jacksonpscruz/version.git</connection>
 		<developerConnection>scm:git:https://github.com/jacksonpscruz/version.git</developerConnection>
-		<tag>0.0.6</tag>
+		<tag>@{project.version}</tag>
 	</scm>
 
 	<dependencies>
