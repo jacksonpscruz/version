@@ -40,7 +40,7 @@
 				<executions>
 					<execution>
 						<id>tag_version</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>clean</goal>
 							<goal>prepare</goal>
