@@ -39,7 +39,7 @@
 				<version>2.5.3</version>
 				<executions>
 					<execution>
-						<id>tag</id>
+						<id>tag_version</id>
 						<phase>install</phase>
 						<goals>
 							<goal>clean</goal>
