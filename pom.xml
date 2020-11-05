@@ -40,7 +40,6 @@
 				<executions>
 					<execution>
 						<id>tag_version</id>
-						<phase>verify</phase>
 						<goals>
 							<goal>clean</goal>
 							<goal>prepare</goal>
